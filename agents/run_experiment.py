@@ -34,7 +34,8 @@ Args = Tuple[str, ...]
 ExperimentInfo = Tuple[str, Args]
 ArgGenerator = Callable[[int, bool, str], Sequence[ExperimentInfo]]
 
-ROOT_DIR = pathlib.Path(__file__).parent.parent / 'results'
+# ROOT_DIR = pathlib.Path(__file__).parent.parent / 'results'
+ROOT_DIR = pathlib.Path('/srv/share/nkannabiran3/phyre_experiments')
 RESULTS_DEV = ROOT_DIR / 'dev'
 RESULTS_FINAL = ROOT_DIR / 'final'
 
